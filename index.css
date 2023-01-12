@@ -102,6 +102,7 @@ header .logo a span{
     -webkit-text-stroke: #fff 0.02px;
     color: transparent;
 }
+
 #home h2, h3{
     font-size: 40px;
     color: #fff;
@@ -218,3 +219,235 @@ h4{
     padding: 30px;
   }
   
+#aboutme{
+    margin-top: 50px;
+    height: calc(100vh - 50px);
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/*scrollbar css*/
+
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #ccc;
+}
+
+#aboutme .left{
+    width: 40%;
+}
+#aboutme .left h5{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+#aboutme .left p{
+    margin-bottom: 35px;
+    color:#986C4A;
+    font-size: 20px;
+}
+#aboutme .left a{
+    background-color: #000;
+    padding: 10px 20px;
+    font-size: 25px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+#aboutme .left a:hover{
+    background-color:#A83D17;
+}
+#aboutme .right{
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#aboutme .right img{
+    width: 100%;
+}
+
+.img-aboutme{
+    width: 700px;
+    height: auto;
+}
+
+/*section contact*/
+
+#contactme{
+    display: flex;
+    align-items: center;
+    margin: center;
+}
+#contactme .left{
+    width: 40%;
+}
+#contactme .left h6{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+#contactme .left p{
+    margin-bottom: 35px;
+    color:#986C4A;
+    font-size: 20px;
+}
+#contactme .left a{
+    background-color: #000;
+    padding: 10px 20px;
+    font-size: 25px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+#contactme .left a:hover{
+    background-color:#A83D17;
+}
+#contactme .right{
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contactme .right img{
+    width: 100%;
+}
+.img-contactme{
+    width: 700px;
+    height: auto;
+}
+/*section map*/
+
+.map{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 12%;
+}
+.localisation_contact_div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100% 0;
+}
+.localisation{
+    width: 49%;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.localisation iframe{
+    width: 100%;
+    border-radius: 6px;
+}
+
+.localisation_contact_div .form_contact{
+    width: 49%;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    padding: 15px;
+    border-radius: 6px;
+
+}
+.localisation_contact_div h3{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.localisation_contact_div .form_contact form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form_contact form input , textarea{
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 5px;
+    outline: 0;
+    border-radius: 6px;
+    font-size: 15px;
+    resize: none;
+}
+.form_contact form input[type="submit"]{
+    margin-bottom: 0;
+    background-color: #A83D17;
+    color: #fff;
+    border:0;
+}
+
+footer{
+    margin-top: 60px;
+    background-color: #ccc;
+    height: auto;
+    padding-top: 40px;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h1{
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 20px 0;
+    letter-spacing: 1px;
+    font-size: 15px;
+
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.socials li{
+    margin: 0 20px;
+}
+.socials a{
+    text-decoration: 0;
+    color: #333;
+    font-size: 20px;
+}
+
+/*Responsive*/
+@media (max-width:682px){
+    header{
+        padding: 0 10px;
+    }
+    header .menu{
+        display: none;
+    }
+    #aboutme{
+        padding: 0 10px;
+        justify-content: center;
+        flex-direction:column ;
+    }
+    #about.me .left , .right{
+        width: 100%;
+    }
+    .right{
+        margin-top: 50px;
+        width: 60%;
+    }
+    .image li{
+        width: 100%;
+    }
+}

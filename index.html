@@ -4,23 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet 1 JCM</title>
+    <title>JCM</title>
     <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/96dcb489.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <header>
+<!--grand ecran apparition navbar-->
         <div class="logo">
             <a href="index.html"><span>JCM </span>Community Manager</a>
         </div>
         <ul class="menu">
-            <li><a href="#">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#aboutme">About me</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
         <a href="#" class="btn-services">CM services proposés</a>
+<!--grand ecran apparition navbar-->
+
+<!--petit ecran apparition menu hamburger-->
+        <div class="hamb-navlink">
+            <button class="hamburger" type="button"aria-label="Toggle navigation"aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+        </button>
+
     </header>
     <!--Section accueil-->
     <section id="home">
@@ -31,7 +43,7 @@
     </section>
     <!--Section accueil-->
 
-    <!--Section 2 services-->
+    <!--services-->
         <div class="section2-list">
             <div class="box">
                 <img src="https://images.pexels.com/photos/5052875/pexels-photo-5052875.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
@@ -47,7 +59,7 @@
             </div>
 
         </div>
-    <!--Section 2 services-->
+    <!--services-->
 
     <!--gallery-->
     <section class="gallery">
@@ -106,7 +118,75 @@
         </div>
     </section>
     <!--gallery-->
+ 
+    <!--section About Me-->
 
+    <section id="aboutme">
+        <div class="left">
+        <h5>About Me</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor lectus laoreet mattis luctus. Curabitur non sem diam. Curabitur ac arcu non turpis tempus posuere.</p>
+        <a href="#">Let's Check</a>
+        </div>
+        <div class="right"></div>
+        <img src="images/aboutme.image.png" class="img-aboutme">
+    </section>
+    <!--section About Me-->
+
+
+    <!--section Contact-->
+    <section id="contactme">
+        <div class="left">
+        <h6>Contact Me</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor lectus laoreet mattis luctus. Curabitur non sem diam. Curabitur ac arcu non turpis tempus posuere.</p>
+        <a href="#">Téléphone</a>
+        <a href="#">Email</a>
+        <a href="#">En Ligne</a>
+        </div>
+        <div class="right"></div>
+        <img src="images/contact.png" class="img-contactme">
+    </section>
+
+    <!--section Contact-->
+
+    <!--section Map-->
+    <section id="map">Nous contactez</section>
+    <h1 class="section_title"></h1>
+    <div class="localisation_contact_div">
+        <div class="localisation">
+            <h3>Notre adresse</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10499.96656794706!2d2.2857265399222086!3d48.85836976859809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1673541605365!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="form_contact">
+            <h3>Envoyer un message</h3>
+            <form action="#" class="">
+                <input type="text" placeholder="Nom">
+                <input type="text" placeholder="Adresse Mail">
+                <input type="text" placeholder="Objet">
+                <textarea name="" id="" cols="30" rows="10"placeholder="Message"></textarea>
+                <input type="Submit" value="Envoyer" id="">
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="footer-content">
+        <h1>JCM COMPANY</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet incidunt ipsam voluptatum corporis, totam dignissimos repellendus eaque quos fugit blanditiis pariatur officia mollitia? Vero iure saepe illum distinctio tenetur similique.</p>
+    <ul class="socials">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa fa-Linkedin"></i></a></li>
+    </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>Jcm Website copyright 2023</p>
+    </div>
+    
+</footer>
 </body>
 </html>
+
 
